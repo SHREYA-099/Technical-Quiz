@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>TECH-TESTIFY</h1>
+
+        <!-- Programming Language section -->
+        <div id="programming-container" class="question-container">
+            <h2>Programming Language Quiz</h2>
+            <button onclick="startQuiz('java')">JAVA QUIZ</button>
+            <button onclick="startQuiz('c')">C QUIZ</button>
+        </div>
+
+        <!-- Web quiz section -->
+        <div id="web-container" class="question-container">
+            <h2>Web Frontend Quiz</h2>
+            <button onclick="startQuiz('html')">HTML QUIZ</button>
+            <button onclick="startQuiz('css')">CSS QUIZ</button>
+            <button onclick="startQuiz('js')">JAVASCRIPT QUIZ</button>
+        </div>
+
+        <!-- Question and answer display -->
+        <div id="question-display" style="display:none;">
+            <div id="question"></div>
+            <div id="answer-buttons"></div>
+            <button id="next-btn" onclick="showNextQuestion()" style="display:none;">Next</button>
+        </div>
+    
+        <div id="result-container" style="display:none;">
+            <div id="result-message"></div>
+            <button id="restart-btn" onclick="restartQuiz()" style="display:none;">Try Again</button>
+        </div>
+
+        <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
+    <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
+    <script src="quiz.js"></script>
+</body>
+</html>
