@@ -622,7 +622,7 @@ function getQuestionsByType(type) {
             return htmlQuestions;
         case 'css':
             return cssQuestions;
-        case 'javascript':
+        case 'js':
             return jsQuestions;
         default:
             return [];
